@@ -9,4 +9,4 @@ data = {'input':data_input}
 #getting prediction
 r = requests.get(URL,headers = headers,json=data)
 #rendering prediction on screen
-print('$'+str(round(r.json()['response'],2))+'K')
+print('The Average expected Salary is around $'+str(round(r.json()['response'],2))+'K')
