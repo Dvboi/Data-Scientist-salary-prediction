@@ -81,7 +81,7 @@ And a few are here:
 
 * The distribution of Ratings across Companies   
 ![rating](https://github.com/Dvboi/Data-Scientist-salary-prediction/blob/master/Rating.png)    
-'-1 Rating is not possible, it was there to indicate missing values which we later imputed with median of the column in model building.`     
+`-1 Rating is not possible, it was there to indicate missing values which we later imputed with median of the column in model building.`         
 
 
 * Are the Age of Company and Average Salary related ?  
@@ -130,8 +130,8 @@ The Phases here were:
 * Data Preprocessing which included feature encoding (both label and one-hot) and feature scaling (for regression model).   
 * Splitting data into 80-20 for Train-Test respectively.   
 * Tried several models,the Best ones were-
-  > As we had sparse data (sparse matrix is the one which has lots of zeros) , Lasso regression was used.
-  > Next were Gradient Boosters, Catboost Regressor was used as we had lots of categorical features(catboost is good for category heavy problems) and it takes care of feature encoding for us, and feature scaling is not important in Tree models (data preprocessing can be skipped).    
+  * As we had sparse data (sparse matrix is the one which has lots of zeros) , Lasso regression was used.  
+  * Next were Gradient Boosters, Catboost Regressor was used as we had lots of categorical features(catboost is good for category heavy problems) and it takes care of feature encoding for us, and feature scaling is not important in Tree models (data preprocessing can be skipped).    
 * I chose `MAE` for two reasons-
   > Good for Regression Tasks  
   > Easy to interpret   
